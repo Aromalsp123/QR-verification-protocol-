@@ -1,4 +1,4 @@
-# 🔐 QRV Protocol — Ride Verification MVP
+# QRV Protocol — Ride Verification MVP
 
 **QR Verification** — A zero-OTP, QR-based ride authentication system.
 
@@ -6,7 +6,7 @@ No secrets shared over voice. No social engineering possible. Tokens die in 45 s
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ride-verify-mvp/
