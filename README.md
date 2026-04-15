@@ -1,6 +1,6 @@
-# 🔐 GASV Protocol — Ride Verification MVP
+# 🔐 QRV Protocol — Ride Verification MVP
 
-**Geo-Anchored Silent Verification** — A zero-OTP, QR-based ride authentication system.
+**QR Verification** — A zero-OTP, QR-based ride authentication system.
 
 No secrets shared over voice. No social engineering possible. Tokens die in 45 seconds.
 
@@ -94,24 +94,6 @@ Encoded as **Base64url** and displayed as a QR code.
 
 ---
 
-## 📡 API Endpoints
-
-```
-POST /api/auth/login          → Login, get JWT
-GET  /api/auth/me             → Get current user
-
-POST /api/rides               → Create ride (driver)
-GET  /api/rides/driver/active → Get active ride (driver)
-POST /api/rides/:id/qr        → Generate QR token (driver)
-POST /api/rides/:id/start     → Start ride (driver)
-POST /api/rides/:id/complete  → Complete ride (driver)
-
-POST /api/rides/verify        → Verify QR token (rider)
-GET  /api/rides/rider/status  → Get rider's current ride
-```
-
----
-
 ## 🛠 Tech Stack
 
 | Layer     | Tech                                    |
@@ -123,38 +105,3 @@ GET  /api/rides/rider/status  → Get rider's current ride
 | Auth      | JWT (jsonwebtoken)                      |
 | Style     | Pure CSS — Black & White only           |
 
----
-
-## ⚙️ Environment Variables
-
-### Backend (.env)
-```
-PORT=3001
-JWT_SECRET=your-strong-secret-here
-QR_SECRET=your-strong-qr-secret-here
-```
-
-### Frontend (.env)
-```
-VITE_API_URL=/api
-```
-
----
-
-## 🔮 V2 Upgrade Path
-
-- [ ] Offline HMAC verification (pre-shared keys on device)
-- [ ] BLE proximity detection (no camera scan needed)
-- [ ] Rotating QR every 10s (anti-screenshot)
-- [ ] Device binding (driver device ID in token)
-- [ ] AI fraud detection (abnormal ride patterns)
-- [ ] PostgreSQL / MongoDB persistence
-- [ ] Push notifications via WebSocket
-
----
-
-## 📄 License
-
-MIT — Built as MVP demonstration of the GASV Protocol concept.
-
-> *"Verification that only works when you're physically there."*
