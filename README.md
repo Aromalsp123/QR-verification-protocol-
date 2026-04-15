@@ -26,7 +26,7 @@ ride-verify-mvp/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Backend Setup
 
@@ -48,7 +48,7 @@ npm run dev
 
 ---
 
-## 🔑 Demo Credentials
+## Demo Credentials
 
 | Role   | Username | Password   |
 |--------|----------|------------|
@@ -59,7 +59,7 @@ npm run dev
 
 ---
 
-## 🔒 Security Architecture
+## Security Architecture
 
 ### Token Structure
 ```json
